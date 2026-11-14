@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f9fc">
+<meta name="description" content="Interactive sample dashboards by Datedge Solutions for real estate, agriculture, banking and schools.">
+<title>Data Analytics Dashboards | Datedge Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="dashboards.css">
+</head>
+<body>
+<header class="header"><div class="wrap nav"><a class="brand" href="index.html" aria-label="Datedge Solutions home"><span class="mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M5 37V25h8v12M17 37V18h8v19M29 37V10h8v27"></path><path d="M5 16 19 9l9 4L42 4" class="trend"></path></svg></span><span><strong>Date<span>dge</span></strong><small>SOLUTIONS</small></span></a><nav class="navlinks dash-nav"><a href="index.html">← Back to website</a><a class="nav-cta" href="index.html#contact">Let's talk <span>↗</span></a></nav></div></header>
+<main>
+<section class="dash-hero"><div class="wrap">
+<div class="eyebrow"><span class="pulse"></span> Data Analytics</div>
+<h1>Interactive dashboards,<br><span>built around your sector.</span></h1>
+<p>Explore sample dashboards for real estate, agriculture, banking and schools. Switch sectors and reporting periods to see how KPIs and trends can be presented for decision-making.</p>
+<div class="demo-note"><span>ⓘ</span><div><b>Demo data</b><small>All figures on this page are illustrative sample data. Confidential client information is not displayed.</small></div></div>
+</div></section>
+<section class="section sector-section"><div class="wrap">
+<div class="sector-tabs" role="tablist" aria-label="Choose a sector">
+<button class="sector-tab active" role="tab" aria-selected="true" data-sector="realestate"><span>⌂</span>Real Estate</button>
+<button class="sector-tab" role="tab" aria-selected="false" data-sector="agriculture"><span>❋</span>Agriculture</button>
+<button class="sector-tab" role="tab" aria-selected="false" data-sector="banking"><span>▦</span>Banking</button>
+<button class="sector-tab" role="tab" aria-selected="false" data-sector="schools"><span>✎</span>Schools</button>
+</div>
+<div class="dash-heading">
+<div><div class="eyebrow" id="sectorEyebrow">PROPERTY PERFORMANCE</div><h2 id="sectorTitle">Real Estate Intelligence</h2><p id="sectorDescription">Bookings, collections, inventory and project performance at a glance.</p></div>
+<label class="period-select">Reporting period <select id="period"><option value="monthly">Monthly</option><option value="quarterly">Quarterly</option><option value="yearly">Year to date</option></select></label>
+</div>
+<div class="kpi-grid" id="kpiGrid"></div>
+<p class="kpi-note">Sample figures for demonstration only.</p>
+<div class="chart-grid">
+<div class="chart-panel"><div class="chart-title"><div><h3 id="mainChartTitle">Bookings &amp; collections trend</h3><p>Sample data, January to June</p></div><span class="chart-chip">TREND</span></div><div class="chart-area"><canvas id="mainChart"></canvas></div></div>
+<div class="chart-panel"><div class="chart-title"><div><h3 id="sideChartTitle">Bookings by project</h3><p>Share of total</p></div><span class="chart-chip">MIX</span></div><div class="chart-area donut-area"><canvas id="sideChart"></canvas></div><div class="custom-legend" id="chartLegend"></div></div>
+</div>
+<div class="insight-panel"><div class="insight-icon">✦</div><div><div class="eyebrow">Insight</div><h3 id="insightTitle"></h3><p id="insightText"></p></div><a class="button primary" href="index.html#contact">Discuss a dashboard <span>↗</span></a></div>
+</div></section>
+<section class="dash-bottom-cta"><div class="wrap"><div><h2>Need a dashboard for your data?</h2><p>Tell us what you want to track and we will design a reporting view around it.</p></div><a class="button primary" href="mailto:loydkooome@gmail.com">Get in touch <span>↗</span></a></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><a class="brand footer-brand" href="index.html"><span class="mark"><svg viewBox="0 0 48 48"><path d="M5 37V25h8v12M17 37V18h8v19M29 37V10h8v27"></path><path d="M5 16 19 9l9 4L42 4" class="trend"></path></svg></span><span><strong>Date<span>dge</span></strong><small>SOLUTIONS</small></span></a><p>Your data. Our edge. Better decisions.</p><small>© <span id="year">2026</span> Datedge Solutions · Nairobi, Kenya</small></div></footer>
+<script src="chart.js"></script>
+<script src="dashboards.js"></script>
+</body>
+</html>
